@@ -15,19 +15,25 @@
                 <legend>Dados Pessoais</legend>
                 <label for="name">Nome:</label>
                 <input id="name" type="text" name="userName" required>
-                <br>
+
                 <label for="age">Idade:</label>
                 <input id="age" type="number" name="age" min="12" max="100" required>
-                <br>
+
                 <label for="date">Data de Nascimento:</label>
                 <input id="date" type="date" name="birthDate">
+                
                 <br>
+                <br>
+
                 <label for="email">Email:</label>
                 <input id="email" type="email" name="userEmail" required>
-                <br>
+
                 <label for="phone">Telefone:</label>
                 <input id="phone" type="tel" name="userPhone" placeholder="DDD + numeros sem espaço" maxlength="11" pattern="[0-9]{11}">
+
                 <br>
+                <br>
+
                 <label for="userFile">Upload de Foto</label>
                 <input id="userFile" type="file" name="userFile" accept="image/*">
 
@@ -38,12 +44,13 @@
                     <p>Genêro:</p>
                     <input id="genderF" type="radio" value="Feminino" name="userGender">
                     <label for="genderF">Feminino</label>
-                    <br>
+                    
                     <input id="genderM" type="radio" value="Masculino" name="userGender">
                     <label for="genderM">Masculino</label>
-                    <br>
+                    
                     <input id="notInfoed" type="radio" value="NotInformed" name="userGender">
                     <label for="notInfoed">Prefiro não informar</label>
+                    <br>
                     <br>
                     <label for="mStatus">Estado Civil:</label>
                     <select id="mStatus" name="maritalStatus">
@@ -53,7 +60,7 @@
                         <option value="Divorciado">Divorciado</option>
                         <option value="casado">União estável</option>
                     </select>
-
+                    <br>
                     <br>
 
                     <label for="state">Estado:</label>
@@ -86,11 +93,12 @@
                         <option value="SP">SP</option>
                         <option value="TO">TO</option>
                     </select>
-                    <br>
+
+
                     <label for="city">Cidade:</label>
                     <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: Fortaleza">
                     
-                </fieldset>
+                </fieldset> 
 
                 <fieldset>
                     <legend>Hábitos</legend>
@@ -118,10 +126,36 @@
                         <option value="Complextro">
                         <option value="Dubstep">
                     </datalist>
-                    <br>
                     <label for="favColor">Cor Favorita</label>
-                    <input type="color" name="userFavColor" id="favColor">
-                </fieldset>
+                    <input type="color" name="userFavColor" id="favColor" style="width: 25px; height: 25px;">
+                </fieldset> 
+
+                <fieldset>
+
+                    <legend>Satisfação</legend>
+
+                    <p>Nível de satisfação:</p>
+
+                    <input id="great" value="satisGreat" type="radio" name="userSatisfaction">
+                    <label for="great">Ótima</label>
+
+                    <input id="good" value="satisGud" type="radio" name="userSatisfaction">
+                    <label for="good">Boa</label>
+
+                    <input id="regular" value="satisOk" type="radio" name="userSatisfaction">
+                    <label for="regular">Regular</label>
+
+                    <input id="horrible" value="satisBad" type="radio" name="userSatisfaction">
+                    <label for="horrible">Ruim</label>
+
+                    <label for="comment" name="userOpinion"></label>
+
+                    <br>
+
+                    <p>Tem uma sugestâo ou opinião?</p>
+                    <textarea name="userComment" id="comment" style="width: 250px; height: 75px;"  placeholder="Escreva seu comentário..."></textarea>
+                </fieldset> 
+
                 <button type="submit">Enviar</button> 
             </form>
         </section>
