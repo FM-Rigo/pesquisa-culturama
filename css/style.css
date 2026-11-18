@@ -96,11 +96,13 @@ button{
 }
 
 button[type="submit"]:hover{
-   transition: 0.3s;
-   background-image: linear-gradient(to bottom, white, lime, green)
+   transition: 0.5s;
+   background-color: lime;
 }
 
 button[type="reset"]:hover{
-   transition: 0.3s;
-   background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 0, 0), rgb(143, 0, 0))
+   transition: 0.5s;
+   background-color: red;
 }
+
+
