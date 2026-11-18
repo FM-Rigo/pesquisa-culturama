@@ -11,7 +11,7 @@ h1{
 
 body{
    font-family: "Work Sans", sans-serif;
-   background-color: #f9f9f9;
+   background-image: linear-gradient(60deg, rgb(255, 255, 255), rgb(62, 62, 255), cyan);
 }
 
 main{
@@ -26,9 +26,12 @@ header{
 }
 
 form{
-   background-color: #f6f6f6;
+   /* background-color: #f6f6f6; */
+   background-color: rgba(246, 246, 246, 0.7);
    padding: 15px;
-   border-radius: 10px;
+   border-radius: 20px;
+   border: 1px solid;
+   margin-bottom: 15px;
 }
 
 fieldset{
@@ -42,6 +45,7 @@ legend{
    font-weight: bold;
    font-size: 18px;
    padding: 0 10px;
+   
 }
 
 label{
@@ -91,8 +95,9 @@ button{
    background-color: #ffffff;
    margin-right: 10px;
    border-radius: 15px;
-   border: 1px solid #cccccc;
+   border: 2px solid #cccccc;
    cursor: pointer;
+   display: inline-block;
 }
 
 button[type="submit"]:hover{
@@ -105,4 +110,10 @@ button[type="reset"]:hover{
    background-color: red;
 }
 
+div{
+   width: 100%;
+   height: 100%;
+   padding-top: 100%;
+   margin-top: 100%;
+}
 
