@@ -37,25 +37,31 @@
                 <input id="name" type="text" name="userName" required>
 
                 <label for="age">Idade:</label>
-                <input id="age" type="number" name="age" min="12" max="100" required>
+                <input id="age" type="number" name="age" min="12" max="100" required aria-describedby="ageHelp">
+                <small id="ageHelp">Idade Mínima: 12, idade máxima: 100</small>
+
+                <br>
 
                 <label for="date">Data de Nascimento:</label>
                 <input id="date" type="date" name="birthDate">
+
+                <br>
+
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="userEmail" placeholder="example@gmail.com" required>
+
+                <label for="phone">Telefone:</label>
+                <input id="phone" type="tel" name="userPhone" 
+                placeholder="DDD + numeros sem espaço" maxlength="11" 
+                pattern="[0-9]{11}" aria-describedby="phoneHelp">
+                <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + Números sem espaços ou hífen.</small>
                 
                 <br>
                 <br>
 
-                <label for="email">Email:</label>
-                <input id="email" type="email" name="userEmail" required>
-
-                <label for="phone">Telefone:</label>
-                <input id="phone" type="tel" name="userPhone" placeholder="DDD + numeros sem espaço" maxlength="11" pattern="[0-9]{11}">
-
-                <br>
-                <br>
-
                 <label for="userFile">Upload de Foto</label>
-                <input id="userFile" type="file" name="userFile" accept="image/*">
+                <input id="userFile" type="file" name="userFile" accept="image/*" aria-describedby="imageHelp">
+                <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
 
                 </fieldset>
 
@@ -203,8 +209,8 @@
                     <label for="notification">Quero receber emails quando houver promoções e novidades.</label>
                 </fieldset>
                 
-                <button id="btnSend" type="submit">Enviar</button>
-                <button id="btnReset" type="reset">Limpar</button> 
+                <button id="btnSend" type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+                <button id="btnReset" type="reset" aria-label="Limpar os dados do formulário">Limpar</button> 
             </form>
         </section>
 
