@@ -49,8 +49,9 @@
                 <input id="email" type="email" name="userEmail" required>
 
                 <label for="phone">Telefone:</label>
-                <input id="phone" type="tel" name="userPhone" placeholder="DDD + numeros sem espaço" maxlength="11" pattern="[0-9]{11}">
-
+                <input id="phone" type="tel" name="userPhone" placeholder="DDD + numeros sem espaço" maxlength="11" pattern="[0-9]{11}" aria-describedby="phoneHelp">
+                <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + Números sem espaços ou hífen.</small>
+                
                 <br>
                 <br>
 

@@ -27,7 +27,7 @@ header{
 
 form{
    /* background-color: #f6f6f6; */
-   background-color: rgba(246, 246, 246, 0.7);
+   background-color: rgba(246, 246, 246, 0.6);
    padding: 15px;
    border-radius: 20px;
    border: 1px solid;
@@ -51,6 +51,15 @@ legend{
 label{
    display: inline-block;
    margin-bottom: 10px;
+}
+
+input[type="tel"]{
+   margin-bottom: 0;
+}
+
+small{
+   margin-bottom: 20px;
+   display: inline-block;
 }
 
 input, select, textarea{
