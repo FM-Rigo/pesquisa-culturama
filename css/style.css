@@ -53,7 +53,9 @@ label{
    margin-bottom: 10px;
 }
 
-input[type="tel"]{
+input[type="tel"],
+input[type="file"],
+input[type="number"]{
    margin-bottom: 0;
 }
 
